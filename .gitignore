@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp / partial downloads
+*.tmp
+*.part
+*.crdownload
+
+# Thumbnail caches
+._*
+.Spotlight-V100
+.Trashes
+
+# Video/image editing temp files
+*.bak
+*.~lock*
