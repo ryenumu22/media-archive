@@ -17,7 +17,24 @@ media-archive/
 └── screenshots/
 ```
 
-## Notes
+## Adding files
 
-- Large files (videos especially) may benefit from [Git LFS](https://git-lfs.github.com/) to avoid bloating the repo history.
-- To enable Git LFS: `git lfs install` then `git lfs track "*.mp4" "*.mov" "*.avi"`
+Whenever you add images or videos to the folder, run:
+
+```bash
+git add .
+git commit -m "add some photos"
+git push
+```
+
+## Git LFS (for video files)
+
+Large video files will bloat your repo history and GitHub will reject files over 100MB. Set up Git LFS first:
+
+```bash
+git lfs install
+git lfs track "*.mp4" "*.mov" "*.avi" "*.mkv"
+git add .gitattributes
+git commit -m "track video files with LFS"
+git push
+```
